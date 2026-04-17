@@ -1,0 +1,59 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
+             x:Class="LivinTheDreamToolkit.Gui.Views.HomeView">
+    <Grid>
+        <Image Source="avares://LivinTheDreamToolkit.Gui/Assets/background.jpg"
+               Stretch="UniformToFill"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch" />
+
+		<Border Background="#22000000" />
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Spacing="32">
+
+            <TextBlock Text="Living The Dream Toolkit"
+                       FontSize="52"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="12"
+                                      OffsetX="0" OffsetY="3" Opacity="0.8" />
+                </TextBlock.Effect>
+            </TextBlock>
+
+            <TextBlock Text="Tomodachi Life UGC Texture Editor"
+                       FontSize="20"
+                       Foreground="#DDDDDD"
+                       HorizontalAlignment="Center" />
+
+			<Button Name="OpenFolderButton"
+                    Content="Open Save UGC Folder"
+                    HorizontalAlignment="Center"
+                    Padding="28,14"
+                    FontSize="20"
+                    FontWeight="SemiBold"
+                    Background="#55000000"
+                    Foreground="White"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    CornerRadius="8"
+                    Click="OpenFolderButton_Click" />
+
+            <TextBlock Name="StatusText"
+                       Foreground="#FFCCCC"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       TextWrapping="Wrap"
+                       MaxWidth="600"
+                       TextAlignment="Center"
+                       IsVisible="False" />
+        </StackPanel>
+    </Grid>
+
+</UserControl>
